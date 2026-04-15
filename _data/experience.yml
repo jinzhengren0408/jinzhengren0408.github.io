@@ -1,0 +1,18 @@
+title: Experience
+description: Research positions and training that shape my academic profile.
+items:
+- role: Visiting Researcher
+  date: Apr 2025 – Present
+  organisation: University of Bath, United Kingdom
+  text: Conducting research with Dr Jiawei Wang on computational approaches for biological
+    sequence analysis and representation learning.
+- role: Visiting Researcher
+  date: Jun 2022 – Present
+  organisation: European Bioinformatics Institute (EMBL-EBI), United Kingdom
+  text: Contributing to research on mobile genetic elements, protein language models,
+    and advanced bioinformatics training activities.
+- role: Research Intern
+  date: May 2021 – May 2022
+  organisation: Centre to Impact AMR, Monash University, Australia
+  text: Worked on computational biology research related to antimicrobial resistance
+    with Dr Jiawei Wang and Prof Trevor Lithgow.

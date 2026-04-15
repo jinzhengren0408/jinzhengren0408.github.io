@@ -1,0 +1,42 @@
+name: Jinzheng Ren
+title: Undergraduate Researcher
+affiliations:
+- Australian National University
+- University of Bath · EMBL-EBI
+avatar: /assets/images/avatar.png
+cv: /assets/files/JinzhengRen_CV_2026_01_03_final.pdf
+links:
+- label: Email
+  url: mailto:jr2765@bath.ac.uk
+  icon: email
+- label: Google Scholar
+  url: https://scholar.google.com/citations?user=y-c0ANcAAAAJ&hl=en
+  icon: scholar
+- label: ORCID
+  url: https://orcid.org/0009-0007-0786-1726
+  icon: orcid
+- label: CV
+  url: /assets/files/JinzhengRen_CV_2026_01_03_final.pdf
+  icon: cv
+biography:
+- I am a Bachelor of Advanced Computing (Research and Development) (Honours) student
+  at the Australian National University, working on <code>computational biology</code>,
+  <code>bioinformatics</code>, and <code>machine learning</code>.
+- My current research focuses on <code>representation learning</code> for biological
+  systems, including mobile genetic elements, <code>protein language models</code>,
+  and deep learning for spatiotemporal biological imaging.
+- Alongside undergraduate study, I have held remote research roles with the University
+  of Bath, EMBL-EBI, and Monash University, working across viral genomics, functional
+  organisation in protein embeddings, and developmental modelling.
+interests:
+- Computational Biology
+- Bioinformatics
+- Machine Learning
+- Representation Learning
+education:
+- icon: 🎓
+  course: Bachelor of Advanced Computing (R&D Honours), expected 2026
+  school: Australian National University
+- icon: 🔬
+  course: Remote research training across Bath, EMBL-EBI, and Monash
+  school: Computational biology, genomics, and machine learning

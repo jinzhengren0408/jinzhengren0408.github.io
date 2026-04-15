@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{% assign profile = site.data.profile %}
+{% assign experience = site.data.experience %}
+{% assign projects = site.data.projects %}
+{% assign publications = site.data.publications %}
+{% assign contact = site.data.contact %}
+<section id="about">
+  <div class="about-layout">
+    <aside class="profile-column">
+      <div class="portrait"><img src="{{ profile.avatar | relative_url }}" alt="Portrait photo" /></div>
+      <h1 class="profile-name">{{ profile.name }}</h1>
+      <p class="profile-title">{{ profile.title }}</p>
+      <p class="profile-affiliation">{{ profile.affiliations[0] }}<br />{{ profile.affiliations[1] }}</p>
+      <div class="link-icons">
+        {% for link in profile.links %}
+          <a class="icon-link {% if link.icon == 'scholar' %}scholar{% endif %}{% if link.icon == 'orcid' %} orcid{% endif %}" href="{{ link.url | relative_url }}" {% unless link.url contains 'mailto:' or link.url contains '/assets/' %}target="_blank" rel="noopener"{% endunless %} title="{{ link.label }}" aria-label="{{ link.label }}">
+            {% case link.icon %}
+              {% when 'email' %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="M4 7l8 6 8-6"></path></svg>
+              {% when 'scholar' %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 9l10 6 10-6-10-6Zm-5 8.4V15c0 2 2.2 3.5 5 3.5s5-1.5 5-3.5v-3.6l-5 3-5-3Z"/></svg>
+              {% when 'orcid' %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-3.6 4.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm.9 3v7H7.5v-7h1.8Zm7.5 3.5c0 2-1.6 3.5-3.8 3.5h-2.7v-7h2.6c2.4 0 3.9 1.3 3.9 3.5Zm-1.9 0c0-1.3-.8-1.9-2.1-1.9H12v3.9h.8c1.3 0 2.1-.7 2.1-2Z"/></svg>
+              {% when 'cv' %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h6l4 4v14H8z"></path><path d="M14 3v4h4"></path><path d="M10.5 12h5"></path><path d="M10.5 15h5"></path></svg>
+            {% endcase %}
+          </a>
+        {% endfor %}
+      </div>
+    </aside>
+    <div class="bio-column">
+      <h1>Biography</h1>
+      <ul class="bio-list">{% for item in profile.biography %}<li>{{ item }}</li>{% endfor %}</ul>
+      <div class="two-column-subsections">
+        <div><h2 class="subheading">Interests</h2><ul class="plain-list">{% for item in profile.interests %}<li>{{ item }}</li>{% endfor %}</ul></div>
+        <div><h2 class="subheading">Education</h2><ul class="edu-list">{% for edu in profile.education %}<li class="edu-item"><div class="edu-icon">{{ edu.icon }}</div><div><p class="edu-course">{{ edu.course }}</p><p class="edu-school">{{ edu.school }}</p></div></li>{% endfor %}</ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="experience"><div class="section-grid"><div class="section-title"><h2>{{ experience.title }}</h2><p>{{ experience.description }}</p></div><div class="content-stack"><div class="timeline">{% for item in experience.items %}<article class="timeline-entry"><div class="entry-head"><h3 class="entry-role">{{ item.role }}</h3><div class="entry-date">{{ item.date }}</div></div><div class="entry-org">{{ item.organisation }}</div><p class="entry-text">{{ item.text }}</p></article>{% endfor %}</div></div></div></section>
+<section id="projects"><div class="section-grid"><div class="section-title"><h2>{{ projects.title }}</h2><p>{{ projects.description }}</p></div><div class="content-stack"><div class="projects-grid">{% for item in projects.items %}<article class="project"><div class="project-thumb">{{ item.banner }}</div><div class="project-body"><h3>{{ item.title }}</h3><p>{{ item.text }}</p>{% if item.link_url and item.link_url != '' %}<a class="more" href="{{ item.link_url }}" target="_blank" rel="noopener">{{ item.link_label }}</a>{% else %}<span class="more">{{ item.link_label }}</span>{% endif %}</div></article>{% endfor %}</div></div></div></section>
+<section id="publications"><div class="section-grid"><div class="section-title"><h2>{{ publications.title }}</h2><p>{{ publications.description }}</p></div><div class="content-stack"><div class="pub-list">{% for item in publications.items %}<article class="pub"><h3>{{ item.title }}</h3><div class="pub-meta">{{ item.meta }}</div><p>{{ item.text }} {% if item.link_url and item.link_url != '' %}<a class="more" href="{{ item.link_url }}" target="_blank" rel="noopener">{{ item.link_label }}</a>{% endif %}</p></article>{% endfor %}</div></div></div></section>
+<section id="contact"><div class="section-grid"><div class="section-title"><h2>{{ contact.title }}</h2><p>{{ contact.description }}</p></div><div class="content-stack"><ul class="contact-list">{% for item in contact.items %}<li class="contact-item"><div class="label">{{ item.icon }}</div><div>{{ item.text }}</div></li>{% endfor %}</ul></div></div></section>

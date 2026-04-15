@@ -1,0 +1,16 @@
+title: Publications
+description: Selected outputs that support the research directions highlighted above.
+items:
+- title: 'Fungtion: a server for predicting and visualizing fungal effectors'
+  meta: Li, J.; Ren, J.; Dai, W.; Stubenrauch, C.; Finn, R.; Wang, J. · Journal of
+    Molecular Biology · 2024
+  text: Published work on a server for predicting and visualising fungal effectors.
+  link_label: DOI →
+  link_url: https://doi.org/10.1016/j.jmb.2024.168613
+- title: Current manuscripts in preparation
+  meta: PhageProfiler · Embedding resolution in microbial systems · Spatiotemporal
+    modelling of mammalian morphogenesis
+  text: These ongoing projects reflect the main directions of my current research
+    and will be added here as they progress toward publication.
+  link_label: ''
+  link_url: ''

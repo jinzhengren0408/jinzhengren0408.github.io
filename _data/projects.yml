@@ -1,0 +1,22 @@
+title: Projects
+description: Selected research themes and systems that define my current work.
+items:
+- banner: Genomics · Language Models
+  title: PhageProfiler
+  text: An integrated framework using DNA and protein language models to study the
+    chromosome–plasmid–virus continuum and refine ICTV-aligned viral taxonomy.
+  link_label: Project website →
+  link_url: https://phageprofiler.org/
+- banner: Representation Learning
+  title: Embedding Resolution
+  text: A framework for interpreting protein language model embeddings at distinct
+    biological levels of organisation, from coarse structure to finer family-level
+    patterns.
+  link_label: Manuscript in preparation
+  link_url: ''
+- banner: Deep Learning · Imaging
+  title: STERN
+  text: A deep learning framework for analysing in vivo 3D light-sheet microscopy
+    data and aligning developmental trajectories across embryos.
+  link_label: Research project
+  link_url: ''

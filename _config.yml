@@ -1,0 +1,17 @@
+title: Jinzheng Ren
+email: jr2765@bath.ac.uk
+description: Academic website of Jinzheng Ren, undergraduate researcher in computational
+  biology, bioinformatics, and machine learning.
+baseurl: ''
+url: ''
+markdown: kramdown
+theme: null
+plugins: []
+collections:
+  pages:
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
